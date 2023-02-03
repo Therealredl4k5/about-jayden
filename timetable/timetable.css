@@ -4,18 +4,14 @@
     display: inline-block;
     text-align: left;
     color:crimson;
-    text-decoration: underline crimson;
     margin-bottom: auto;
     margin-top: auto;
     min-width: fit-content;
 }
 
 .topbar{
-    margin-top: 10px;
-    display: block;
-    border: solid 2px;
     background-color: aquamarine;
-
+    border: solid 2px;
 }
 nav li{
     border: solid 1px;
@@ -24,11 +20,11 @@ nav li{
     list-style: inside;
 }
 nav{
-    display: inline-flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aquamarine;
+    display: inline-block;
     list-style: lower-greek;
     padding-left: 20px;
-
 }
 nav a:link{
     outline: none;
