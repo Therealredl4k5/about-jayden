@@ -112,7 +112,7 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     position: relative;
-    min-width: 400px;
+    min-width: 450px;
     display: block;
     transition: 1s ease;
     margin: auto;
@@ -120,6 +120,29 @@ p{
     padding: 5px;
     background-image: none;
     font-weight: bold;
+}
+
+.favouriteShows{
+    display: block;
+    text-align: center;
+}
+.favouriteShows li{
+    display: inline;
+    
+}
+.favouriteShows a > img{
+    width: 50px;
+    border: solid 5px;
+    object-fit: cover;
+    height: 500px;
+    transition: 1s ease;
+    border-color: black;
+}
+.favouriteShows a:hover img{
+    width: 400px;
+    height: 500px;
+    border-color: crimson;
+    transition: 1s ease;
 }
 
 
