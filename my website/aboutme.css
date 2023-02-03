@@ -1,0 +1,71 @@
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    color:blue;
+    text-decoration: underline black;
+    margin-bottom: auto;
+    border: solid 2px;
+    border-color: black;
+    background-color: #ffff00;
+    margin-top: auto;
+}
+
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid 2px;
+}
+nav a:link{
+    outline: none;
+    color: black;
+    text-decoration: none;
+}
+nav a:visited{
+    outline: none;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    outline: none;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: lightgray;
+    border-radius: 5px;    
+}
+
+nav li{
+    display: inline-block;
+    padding-right: 40px;
+}
+.aboutMe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+
+}
+
+.imageTaglines{
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+
+.oldMagd img{
+    padding: 5px;
+    padding-top:50px;
+    height: 250px;
+    width: 250px;
+
+}
+
+.oldMagd {
+    display:table;
+    margin:auto;
+}
+
