@@ -94,8 +94,6 @@ p{
 }
 .favouriteVideoGames a:hover > img{
     border: solid 8px;
-    border-radius: 8px;
-    border-color: red;
     height: 250px;
     transition: height 200ms, border-color 1s, opacity 500ms ease;
     opacity: 0;
