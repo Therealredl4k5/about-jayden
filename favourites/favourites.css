@@ -99,29 +99,6 @@ p{
     opacity: 0;
 }
 
-.favouriteVideoGames a > .gameText{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0px;
-    display: block;
-    width: 200px;
-    background-color: white;
-    transition: 100ms ease;
-}
-
-.favouriteVideoGames a:hover > .gameText{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    position: relative;
-    min-width: 450px;
-    display: block;
-    transition: 1s ease;
-    margin: auto;
-    border: solid 2px;
-    padding: 5px;
-    background-image: none;
-    font-weight: bold;
-}
-
 .favouriteShows{
     display: block;
     text-align: center;
@@ -143,6 +120,10 @@ p{
     height: 500px;
     border-color: crimson;
     transition: 1s ease;
+}
+
+.favouriteMusic li{
+    list-style: none;
 }
 
 
