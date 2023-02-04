@@ -49,6 +49,7 @@ nav li{
     border-radius: 8px;
     padding: 5px;
     list-style: inside;
+    display: inline-block;
 }
 
 
