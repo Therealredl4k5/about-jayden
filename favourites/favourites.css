@@ -15,12 +15,12 @@ h1{
 .topbar{
     background-color: aquamarine;
     border: solid 2px;
+    
 }
 
 nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: aquamarine;
-    display: inline-block;
     list-style: lower-greek;
     padding-left: 20px;
 }
@@ -99,6 +99,10 @@ p{
     opacity: 0;
 }
 
+.favouriteVideoGames #rimworld{
+    background-image: url(../pictures/rimworld-rimsol.gif); background-repeat: no-repeat; background-size: cover;
+}
+
 .favouriteShows{
     display: block;
     text-align: center;
@@ -145,14 +149,15 @@ p{
     .topbar{
         background-color: aquamarine;
         border: solid 2px;
+        text-align: left;
+        max-width: 400px;
     }
     
     nav{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: aquamarine;
-        display: inline-block;
+        display: inline;
         list-style: lower-greek;
-        padding-left: 20px;
     }
     nav a:link{
         outline: none;
@@ -168,9 +173,7 @@ p{
     nav a:hover{
         outline: none;
         color: crimson;
-        text-decoration: underline;
         font-weight: bold;
-        background-color: lightgray;
         border-radius: 5px;    
         transition: color 500ms;
     }
@@ -186,62 +189,73 @@ p{
     }
     .favouriteVideoGames a{
         background-image: none;
+        height: fit-content;
     }
+    .favouriteVideoGames a:hover{
+        border: solid 0px;
+        height: fit-content;
+    }
+
+
     .favouriteVideoGames{
         display: inline;
         text-align: left;
     }
     .favouriteVideoGames li{
-        display: inline-table;
-        margin:auto;
-        white-space: nowrap;
-        
+        display: inline-block;
     }
-    .favouriteVideoGames img{
+    .favouriteVideoGames a{
+        border: solid 0px;
+        width: 100px;
+        object-fit: cover;
+    }
+    
+
+    .favouriteVideoGames a > img{
     
         height: 100px;
         border: solid 0px;
         transition: height 1s, border-color 1s;
-        
-        
     }
-    .favouriteVideoGames img:hover{
+    .favouriteVideoGames a:hover > img{
         border: solid 3px;
         border-radius: 8px;
         border-color: red;
         height: 110px;
+        opacity: 1;
         transition: height 1s, border-color 1s;
         white-space: nowrap;
         
     }
-    
-    .overlay {
-        width: 100%;
-        height: 100%;
-        background-color: aquamarine;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
+    .favouriteVideoGames #rimworld{
+        background-image: none;
     }
-    .container:hover .overlay{
-        opacity: 1;
+
+    .favouriteShows{
+        display: inline;
+        text-align: left;
+        white-space: nowrap;
     }
-    .Rimworldtext {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-        position: absolute;
-        display: block;
-        border: solid 1px;
-        color: black;
-        text-decoration: none;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 1s;
+    .favouriteShows li{
+        display: inline;
+        
+    }
+    .favouriteShows a > img{
+        width: 25px;
+        border: solid 5px;
+        object-fit: cover;
+        height: 300px;
+        transition: 1s ease;
+        border-color: black;
+    }
+    .favouriteShows a:hover img{
+        width: 50px;
+        height: 350px;
+        border-color: crimson;
+        transition: 1s ease;
+    }
+
+    .favouriteMusic li{
+        width: 300px;
     }
 }
