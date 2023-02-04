@@ -184,6 +184,9 @@ p{
         max-width: 400px;
     
     }
+    .favouriteVideoGames a{
+        background-image: none;
+    }
     .favouriteVideoGames{
         display: inline;
         text-align: left;
