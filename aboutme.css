@@ -9,12 +9,31 @@ h1{
     border-color: black;
     background-color: aquamarine;
     margin-top: auto;
+    -o-animation: fadein 2s ease;
+    -moz-animation: fadein 2s ease;
+    -webkit-animation: fadein 2s ease;
+}
+
+@-o-keyframes fadein{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes fadein{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes fadein{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: solid 2px;
     background-color: aquamarine;
+    -o-animation: fadein 2s ease;
+    -moz-animation: fadein 2s ease;
+    -webkit-animation: fadein 2s ease;
 }
 nav a:link{
     outline: none;
