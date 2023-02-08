@@ -12,6 +12,7 @@
     -webkit-animation: fadein 1s ease;
 }
 
+
 @-o-keyframes fadein{
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -75,13 +76,111 @@ table{
     margin-bottom: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width: fit-content;
+    border-collapse: collapse;
+    border-color: black;
 }
 table td{
     padding:5px;
     text-align: center;
-    
 }
 
+#History{
+background-color: #E27D60;
+color:black;
+font-family: poppins;
+}
+#Biology{
+background-color: #85DC;
+color: black;
+font-family: poppins;
+}
+#English{
+background-color: #E8A87C;
+font-family: poppins;
+}
+#Maths{
+background-color: #C38D9E;
+color:black;
+font-family: poppins;
+}
+#IT{
+background-color: #41B3A3;
+font-family: poppins;
+color:black;
+}
+#Business{
+background-color: #F64C72;
+font-family: poppins;
+color:black;
+}
+#Posf{
+    background-color: bisque;
+}
+
+.classdetails{
+    opacity: 0;
+    display: block;
+    position: absolute;
+    transition: 0.5s ease;
+    color:white;
+}
+#Posf:hover > .classdetails{
+    opacity: 1;
+    display: block;
+    position: absolute;
+    background-color: black;
+    border: solid 1px;
+    border-radius: 8px; 
+}
+#Biology:hover > .classdetails{
+    opacity: 1;
+    display: block;
+    position: absolute;
+    background-color: black;
+    border: solid 1px;
+    border-radius: 8px; 
+}
+#History:hover > .classdetails{
+    opacity: 1;
+    display: block;
+    position: absolute;
+    background-color: black;
+    border: solid 1px;
+    border-radius: 8px;
+    }
+#English:hover > .classdetails{
+    opacity: 1;
+    color:white;
+    display: block;
+    position: absolute;
+    background-color: black;
+    border: solid 1px;
+    border-radius: 8px;
+}
+#Maths:hover > .classdetails{
+    opacity: 1;
+    display: block;
+    position: absolute;
+    background-color: black;
+    border: solid 1px;
+    border-radius: 8px;
+}
+#IT:hover > .classdetails{
+    opacity: 1;
+    display: block;
+    position: absolute;
+    background-color: black;
+    border: solid 1px;
+    border-radius: 8px;
+}
+#Business:hover > .classdetails{
+    opacity: 1;
+    display: block;
+    position: absolute;
+    background-color: black;
+    border: solid 1px;
+    border-radius: 8px;
+}
 table th{
     background-color: aquamarine;
 }
@@ -102,14 +201,29 @@ table th{
         margin-bottom: auto;
         margin-top: auto;
         min-width: fit-content;
+       
     }
     
     .topbar{
+        text-align: center;
         margin-top: 10px;
         display: block;
         border: solid 2px;
         background-color: aquamarine;
+        width: min-content;
     
+    }
+    .topbar h1{
+        padding:10px;
+    }
+    .listofclasses{
+        display: inline;
+        border: 0px;
+        text-align: left;
+    }
+    .listofclasses ul{
+        display: inline;
+        text-align: left;
     }
     nav{
         display: block;
@@ -147,6 +261,7 @@ table th{
         margin-bottom: 50px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         min-width: fit-content;
+        border-collapse: collapse;
     }
     table td{
         padding:5px;

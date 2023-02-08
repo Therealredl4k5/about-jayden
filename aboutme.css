@@ -100,6 +100,7 @@ ol li{
     border: solid 2px;
     border-radius: 8px;
     padding: 10px;
+    margin-top: 1px;
 }
 
 ol li:visted{
@@ -108,6 +109,26 @@ ol li:visted{
 ol li:hover{
     text-decoration: underline;
     font-weight: bold;
+}
+
+.tableAboutMe{
+    display: table;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: fit-content;
+}
+.tableAboutMe th{
+    background-color: aquamarine;
+    padding: 5px;
+}
+.tableAboutMe td{
+    padding:5px;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {

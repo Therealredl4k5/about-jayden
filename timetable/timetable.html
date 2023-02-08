@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="timetable.css">
 <link rel="icon" href="../pictures/Old Magd.png"> <!--Picture above--> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
 <html>
     <head>
         <title>My timetable</title>
@@ -21,15 +22,17 @@
             </div>
             <div class="listofclasses" style="text-align: center;">
                 <ul style="list-style: none;">
-                    <li><li style="font-family: Verdana, Geneva, Tahoma, sans-serif; list-style: none;">My list of subjects:</li>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif; list-style: none;">My list of subjects in 2023:</li>
                 </ul>
-                <ol>
+                <ul>
                     
-                    <li style="list-style: decimal;font-family: Verdana, Geneva, Tahoma, sans-serif;">Business/Legal</li>
-                    <li style="list-style: decimal;font-family: Verdana, Geneva, Tahoma, sans-serif;">Digital Technology</li>
-                    <li style="list-style: decimal;font-family: Verdana, Geneva, Tahoma, sans-serif;">English</li>
-                    <li style="list-style: decimal;font-family: Verdana, Geneva, Tahoma, sans-serif;">History</li>
-                </ol>
+                    <li style="list-style: initial;font-family: Verdana, Geneva, Tahoma, sans-serif;">Business/Legal</li>
+                    <li style="list-style: initial;font-family: Verdana, Geneva, Tahoma, sans-serif;">Digital Technology</li>
+                    <li style="list-style: initial;font-family: Verdana, Geneva, Tahoma, sans-serif;">English</li>
+                    <li style="list-style: initial;font-family: Verdana, Geneva, Tahoma, sans-serif;">History</li>
+                    <li style="list-style: initial;font-family: Verdana, Geneva, Tahoma, sans-serif;">Biology</li>
+                    <li style="list-style: initial;font-family: Verdana, Geneva, Tahoma, sans-serif;">Maths (Methods)</li>
+                </ul>
             </div>
             <p style="text-align: center; display: block; border: 0px; background-color: initial; 
             text-decoration: none; color: black; font-size: 70px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Week A</p>
@@ -44,42 +47,47 @@
                 </tr>
                 <tr>
                     <th>Period 1</th>
-                    <td rowspan="2">Chinese</td>
-                    <td rowspan="2">Business/Legal</td>
-                    <td rowspan="2">IT</td>
-                    <td>English</td>
-                    <td rowspan="2">History</td>
+                    <td rowspan="2" id="Biology">Biology<div class="classdetails">SCL 310</div></td> 
+                    <td rowspan="2" id="Business">Business/Legal<div class="classdetails">KET 408</div></td>
+                    <td rowspan="2" id="IT">IT<div class="classdetails">MAH 103</div></td>
+                    <td id="English" id="English">English<div class="classdetails">FMAI L2</div></td>
+                    <td rowspan="2" id="History">History<div class="classdetails">CUI 512</div></td>
                 </tr>
                 <tr>
                     <th>Period 2</th>
-                    <td>IT</td>
+                    <td id="IT">IT<div class="classdetails">MAH 103</div></td>
                 </tr>
                 <tr>
                     <th colspan="6">Recess</th>
                 </tr>
                 <tr>
+                    <th colspan="2"></th>
+                    <td id="Posf">Positive futures <div class="classdetails">WHT 305</div></th>
+                    <th colspan="3"></th>
+                </tr>
+                <tr>
                     <th>Period 3</th>
-                    <td>History</td>
-                    <td rowspan="2">English</td>
-                    <td>Chinese</td>
-                    <td rowspan="2">Business/Legal</td>
-                    <td rowspan="2">Maths</td>
+                    <td id="History">History<div class="classdetails">CUI 300</div></td>
+                    <td rowspan="2" id="English">English<div class="classdetails">FMAI L3</div></td>
+                    <td id="Biology">Biology<div class="classdetails">SCL 310</div></td>
+                    <td rowspan="2" id="Business">Business/Legal<div class="classdetails">KET 408</div></td>
+                    <td rowspan="2" id="Maths">Maths<div class="classdetails">HUN 106</div></td>
                 </tr>
                 <tr>
                     <th>Period 4</th>
-                    <td>Maths</td>
-                    <td>Business/Legal</td>
+                    <td id="Maths">Maths<div class="classdetails">HUN 502</div></td>
+                    <td id="Business">Business/Legal<div class="classdetails">KET 408</div></td>
                 </tr>
                 <tr>
                     <th colspan="6">Lunch</th>
                 </tr>
                 <tr>
                     <th>Period 5</th>
-                    <td rowspan="2">IT</td>
-                    <td rowspan="2">History</td>
-                    <td rowspan="2">Maths</td>
-                    <td rowspan="2">Chinese</td>
-                    <td rowspan="2">English</td>
+                    <td rowspan="2" id="IT">IT<div class="classdetails">MAH 103</div></td>
+                    <td rowspan="2" id="History">History<div class="classdetails">CUI 506</div></td>
+                    <td rowspan="2" id="Maths">Maths<div class="classdetails">HUN 528</div></td>
+                    <td rowspan="2" id="Biology">Biology<div class="classdetails">SCL 310</div></td>
+                    <td rowspan="2" id="English">English<div class="classdetails">FMAI 532</div></td>
                 </tr>
                 <tr>
                     <th>Period 6</th>
@@ -99,42 +107,47 @@
                 </tr>
                 <tr>
                     <th>Period 1</th>
-                    <td rowspan="2">Chinese</td>
-                    <td rowspan="2">History</td>
-                    <td>Business/Legal</td>
-                    <td>English</td>
-                    <td rowspan="2">Maths</td>
+                    <td rowspan="2" id="Biology">Biology<div class="classdetails">SCL 310</div></td>
+                    <td rowspan="2" id="History">History<div class="classdetails">CUI 5102</div></td>
+                    <td id="Business">Business/Legal<div class="classdetails">KET 408</div></td>
+                    <td id="English">English<div class="classdetails">FMAI 532</div></td>
+                    <td rowspan="2" id="Maths">Maths<div class="classdetails">HUN 105</div></td>
                 </tr>
                 <tr>
                     <th>Period 2</th>
-                    <td>Chinese</td>
-                    <td>IT</td>
+                    <td id="Biology">Biology<div class="classdetails">SCL 310</div></td>
+                    <td id="IT">IT <div class="classdetails">MAH 103</div></td>
                 </tr>
                 <tr>
                     <th colspan="6">Recess</th>
                 </tr>
                 <tr>
+                    <th colspan="2"></th>
+                    <td id="Posf">Positive futures <div class="classdetails">WHT 305</div></th>
+                    <th colspan="3"></th>
+                </tr>
+                <tr>
                     <th>Period 3</th>
-                    <td>Maths</td>
-                    <td rowspan="2">Business/Legal</td>
-                    <td rowspan="2">IT</td>
-                    <td rowspan="2">Chinese</td>
-                    <td rowspan="2">English</td>
+                    <td id="Maths">Maths<div class="classdetails">HUN 502</div></td>
+                    <td rowspan="2" id="Business">Business/Legal<div class="classdetails">KET 408</div></td>
+                    <td rowspan="2" id="IT">IT<div class="classdetails">MAH 103</div></td>
+                    <td rowspan="2" id="Biology">Biology<div class="classdetails">SCL 310</div></td>
+                    <td rowspan="2" id="English">English<div class="classdetails">FMAI 532</div></td>
                 </tr>
                 <tr>
                     <th>Period 4</th>
-                    <td>History</td>
+                    <td id="History">History<div class="classdetails">CUI 519</div></td>
                 </tr>
                 <tr>
                     <th colspan="6">Lunch</th>
                 </tr>
                 <tr>
                     <th>Period 5</th>
-                    <td rowspan="2">IT</td>
-                    <td rowspan="2">English</td>
-                    <td rowspan="2">Maths</td>
-                    <td rowspan="2">Business/Legal</td>
-                    <td rowspan="2">History</td>
+                    <td rowspan="2" id="IT">IT<div class="classdetails">MAH 103</div></td>
+                    <td rowspan="2" id="English">English<div class="classdetails">FMAI 532</div></td>
+                    <td rowspan="2"id="Maths">Maths<div class="classdetails">HUN 528</div></td>
+                    <td rowspan="2" id="Business">Business/Legal<div class="classdetails">KET 408</div></td>
+                    <td rowspan="2" id="History">History<div class="classdetails">CUI 522</div></td>
                 </tr>
                 <tr>
                     <th>Period 6</th>
