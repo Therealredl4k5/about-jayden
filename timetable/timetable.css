@@ -81,8 +81,15 @@ table{
 }
 table td{
     padding:5px;
+    width:200px;
     text-align: center;
 }
+table th{
+    background-color: aquamarine;
+    height: 50px;
+    width: 150px;
+}
+
 
 #History{
 background-color: #E27D60;
@@ -114,7 +121,7 @@ font-family: poppins;
 color:black;
 }
 #Posf{
-    background-color: bisque;
+    background-color: #f6d8ab;
 }
 
 .classdetails{
@@ -181,9 +188,7 @@ color:black;
     border: solid 1px;
     border-radius: 8px;
 }
-table th{
-    background-color: aquamarine;
-}
+
 
 .listofclasses{
     border: solid 2px;

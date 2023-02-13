@@ -122,6 +122,19 @@ ol li:hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width: fit-content;
 }
+
+.tableAboutMe table{
+    font-size: 25px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: fit-content;
+    border-collapse: collapse;
+    border-color: black;
+}
 .tableAboutMe th{
     background-color: aquamarine;
     padding: 5px;

@@ -35,7 +35,7 @@ h1{
 #submenu {
     background: linear-gradient(to right,blue, skyblue, black, skyblue, blue);
     background-size: 200%;
-    font-size: 50px;
+    font-size: 100px;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -183,6 +183,12 @@ p{
 .favouriteMusic li{
     list-style: none;
 }
+
+.otherHobbies{
+    margin-left: 20px;
+    text-align: center;
+}
+
 
 
 @media screen and (max-width: 600px) {
