@@ -24,7 +24,7 @@
             please do not hesistate to support me on the project!
         </p>
         <div class="OfSteamandPowerIntro" style="background-image: url(../pictures/logo.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; margin-top: 500px; padding-bottom: 300px; padding-top: 300px">
-            <div class="caption"><h1 style="border: 1px; color: black; background-color: white; display: inline-block; padding: 20px; border-radius: 8px;">
+            <div class="caption"><h1 style="color: black; background-color: white; display: inline-block; padding: 20px; border-radius: 8px; border: solid 2px;">
                 <b>Of Steam and Power</b></h1></div>
         </div>
         <div class="OfSteamandPowersypnosis" style="Background-image: url(../pictures/TheMachineCity1.png); background-repeat: no-repeat; background-size: cover; background-position: center; display: block; padding-bottom: 300px; margin-top: -30px; background-attachment: fixed;">
@@ -90,8 +90,15 @@ p{
     margin-top: 30px;
 
 }
+.OfSteamandPowersypnosis p{
+    opacity: 1;
+}
 
-
+.OfSteamandPowersypnosis-animation p{
+    -o-animation: wipein 2s ease;
+    -moz-animation: wipein 2s ease;
+    -webkit-animation: wipein 2s ease;
+}
 
 @-o-keyframes fadein{
     0%{opacity: 0;}
@@ -108,6 +115,23 @@ p{
 @-webkit-keyframes fadein{
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+
+@-o-keyframes wipein{
+    0%{opacity: 0; bottom: 30px;}
+    100%{opacity: 1; bottom: 0;}
+}
+@-moz-keyframes wipein{
+    0%{opacity: 0; bottom: 30px;}
+    100%{opacity: 1; bottom: 0;}
+}
+@keyframes wipein{
+    0%{opacity: 0; bottom: 30px;}
+    100%{opacity: 1; bottom: 0;}
+}
+@-webkit-keyframes wipein{
+    0%{opacity: 0; bottom: 30px;}
+    100%{opacity: 1; bottom: 0;}
 }
 
 .topbar{
@@ -237,3 +261,15 @@ table th{
     
 }
 </style>
+
+<script type="text/javascript">
+    const observer = new IntersectionObserver(entries =>{
+        entries.forEach(entry => {
+            if (entry.isIntersecting){
+                entry.target.classList.add('OfSteamandPowersypnosis-animation')
+            }
+        })
+    })
+
+    observer.observe(document.querySelector('.OfSteamandPowersypnosis'));
+</script>
