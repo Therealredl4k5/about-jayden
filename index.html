@@ -14,11 +14,11 @@
 
         <div class="topbar">
             <h1>Jayden He</h1>
-            <nav>
+            <nav id="navbar">
                 <ul> <!--unordered list-->
                     <li><a href="favourites/favourites.html">Favourites</a></li>
                     <li><a href="timetable\timetable.html">Timetable</a></li>
-                    <li><a href="css images/cssimages.html">CSS</a></li>
+                    <li><a href="css images/cssimages.html">CSS images</a></li>
                     <li><a href="colorhtml/colours.html">Colors</a></li>
                     <li><a href="whatamIdoing/whatamIdoing.html">Projects</a></li>
                     <li><a href="text align/textalign.html">Text align</a></li>
@@ -96,3 +96,22 @@
     </body>
 
 </html>
+<script type="text/Javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>

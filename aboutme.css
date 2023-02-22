@@ -36,9 +36,21 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: solid 2px;
     background-color: aquamarine;
+    transition: 0.2s ease;
     -o-animation: fadein 2s ease;
     -moz-animation: fadein 2s ease;
     -webkit-animation: fadein 2s ease;
+}
+nav.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 10px;
+    transition: 0.2s ease;
+}
+
+nav.sticky + .aboutMe{
+    padding-top :300px;
 }
 nav a:link{
     outline: none;
@@ -220,5 +232,6 @@ ol li:hover{
     .oldMagd {
         display: inline;
     }
+    
     
 }
