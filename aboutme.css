@@ -162,6 +162,9 @@ ol li:hover{
     .topbar{
         display:inline-block
     }
+    ::-webkit-scrollbar {
+        display: none;
+        }
     h1{
         font-family: sans-serif;
         font-size: 50px;

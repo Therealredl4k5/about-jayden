@@ -278,4 +278,7 @@ color:black;
     table th{
         background-color: aquamarine;
     }
+    ::-webkit-scrollbar {
+        display: none;
+        }
 }

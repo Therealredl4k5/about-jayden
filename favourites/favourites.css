@@ -44,6 +44,9 @@ h1{
     animation: gradientBackground 2s ease infinite;
 
 }
+::-webkit-scrollbar {
+    display: none;
+    }
 
 @-webkit-keyframes gradientBackground{
     0%{background-position: 0% 50%}
