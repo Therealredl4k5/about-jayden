@@ -13,6 +13,7 @@ h1{
     -o-animation: fadein 1s ease;
     -moz-animation: fadein 1s ease;
     -webkit-animation: fadein 1s ease;
+    animation: fadein 1s ease;
 }
 
 @-o-keyframes fadein{
@@ -40,6 +41,7 @@ nav{
     -o-animation: fadein 2s ease;
     -moz-animation: fadein 2s ease;
     -webkit-animation: fadein 2s ease;
+    animation: fadein 1s ease;
 }
 nav.sticky{
     position: fixed;
