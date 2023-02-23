@@ -66,7 +66,15 @@ nav a:hover{
     border-radius: 5px;  
 }
 
+.listofclasses a{
+    text-decoration: none;
+    color: black;
+}
+.listofclasses a:hover{
+    text-decoration: underline;
+    font-weight: bold;
 
+}
 table{
     font-size: 25px;
     display: table;
@@ -88,6 +96,15 @@ table th{
     background-color: aquamarine;
     height: 50px;
     width: 150px;
+}
+
+table a{
+    text-decoration: none;
+    color:black;
+}
+table a:hover{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 
