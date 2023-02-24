@@ -16,7 +16,7 @@
             <h1>Jayden He</h1>
             <nav id="navbar">
                 <ul> <!--unordered list-->
-                    <li><a href="favourites/favourites.html">Favourites</a></li>
+                    <li><a href="favourites/favourites.html" onmouseover="refreshAlphabet()">Favourites</a></li>
                     <li><a href="timetable\timetable.html">Timetable</a></li>
                     <li><a href="css images/cssimages.html">CSS images</a></li>
                     <li><a href="colorhtml/colours.html">Colors</a></li>
@@ -99,7 +99,7 @@
 </html>
 <script type="text/Javascript">
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {stickyNavBar()};
     
     // Get the navbar
     var navbar = document.getElementById("navbar");
@@ -108,11 +108,18 @@
     var sticky = navbar.offsetTop;
     
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
+    function stickyNavBar() {
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
       } else {
         navbar.classList.remove("sticky");
       }
+    }
+
+    const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    console.log(alphabet[Math.floor(Math.random()*alphabet.length)])
+
+    function refreshAlphabet(){
+
     }
     </script>
