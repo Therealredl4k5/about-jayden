@@ -29,7 +29,7 @@
         </div>
         <div class="aboutMe" style="background-color: white; border: solid 2px">
             <p>Hi, my name is Jayden. I am a year 10 student at East Doncaster Secondary. 
-            I am currently 15 years old, but I am turning 16 this year. I am interested in IT
+            I am currently <span class="age">15</span> years old. I am interested in IT
             and I enjoy <u>programming, gaming, editing and badminton</u>. I was born in New Zealand, but I moved
             here when I was a little over one. I have lived in <i>Australia</i> the rest of my life, essentially
             making me an Australian. My family came from China and some of my distant family has been living
@@ -44,7 +44,7 @@
                 <table border="1">
                     <tr>
                         <th>Age</th>
-                        <td>15</td>
+                        <td class="age">15</td>
                     </tr>
                     <tr>
                         <th>Suburb</th>
@@ -116,10 +116,48 @@
       }
     }
 
-    const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-    console.log(alphabet[Math.floor(Math.random()*alphabet.length)])
+    console.log("hello world!");
 
-    function refreshAlphabet(){
+    function updateAge()
+    {
+        console.log("updating age...")
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yy = String(today.getFullYear())
+
+        today = dd + '/' + mm + '/' + yy;
+
+
+        var birthyear = 2007;
+
+        console.log(today + '!');
+
+            age = localStorage.getItem("age")
+            age = parseInt(age);
+
+        if(mm <= 07 && dd < 21){
+            age = yy - birthyear - 1;
+            const ageList = document.getElementsByClassName("age");
+            console.log(ageList);
+            for(let i of ageList)
+            {
+                i.innerHTML = age;
+            }
+            console.log(age);
+        }
+        else{
+            age = yy - birthyear;
+            const ageList = document.getElementsByClassName("age");
+            console.log(ageList);
+            for(let i of ageList)
+            {
+                i.innerHTML = age;
+            }
+        }
+        
 
     }
+    updateAge();
+
     </script>
